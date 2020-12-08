@@ -1,0 +1,32 @@
+<%= form_with(model: master_form, local: true) do |form| %>
+  <% if master_form.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(master_form.errors.count, "error") %> prohibited this master_form from being saved:</h2>
+
+      <ul>
+        <% master_form.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :dec_name %>
+    <%= form.text_field :dec_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nok_name %>
+    <%= form.text_field :nok_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nok_phone_number %>
+    <%= form.number_field :nok_phone_number %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

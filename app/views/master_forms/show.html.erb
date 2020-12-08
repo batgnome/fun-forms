@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dec name:</strong>
+  <%= @master_form.dec_name %>
+</p>
+
+<p>
+  <strong>Nok name:</strong>
+  <%= @master_form.nok_name %>
+</p>
+
+<p>
+  <strong>Nok phone number:</strong>
+  <%= @master_form.nok_phone_number %>
+</p>
+
+<%= link_to 'Edit', edit_master_form_path(@master_form) %> |
+<%= link_to 'Back', master_forms_path %>

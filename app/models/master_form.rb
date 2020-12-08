@@ -1,0 +1,2 @@
+class MasterForm < ApplicationRecord
+end

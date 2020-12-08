@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Master Forms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dec name</th>
+      <th>Nok name</th>
+      <th>Nok phone number</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @master_forms.each do |master_form| %>
+      <tr>
+        <td><%= master_form.dec_name %></td>
+        <td><%= master_form.nok_name %></td>
+        <td><%= master_form.nok_phone_number %></td>
+        <td><%= link_to 'Show', master_form %></td>
+        <td><%= link_to 'Edit', edit_master_form_path(master_form) %></td>
+        <td><%= link_to 'Destroy', master_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Master Form', new_master_form_path %>

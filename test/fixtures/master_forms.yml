@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dec_name: MyString
+  nok_name: MyString
+  nok_phone_number: 1
+
+two:
+  dec_name: MyString
+  nok_name: MyString
+  nok_phone_number: 1
