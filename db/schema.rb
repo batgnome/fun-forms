@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_08_022401) do
+ActiveRecord::Schema.define(version: 2020_12_08_030217) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_12_08_022401) do
   create_table "master_forms", force: :cascade do |t|
     t.string "dec_name"
     t.string "nok_name"
-    t.integer "nok_phone_number"
+    t.string "nok_phone_number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

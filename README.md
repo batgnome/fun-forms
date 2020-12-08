@@ -1,4 +1,6 @@
 Read Me
 
 To Do
-[] make app
+[] add all columns to masterform database
+[] add table for funeral directors/home
+[] edit form for adding new decedent
