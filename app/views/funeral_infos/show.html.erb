@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fun home:</strong>
+  <%= @funeral_info.fun_home %>
+</p>
+
+<p>
+  <strong>Fun dir:</strong>
+  <%= @funeral_info.fun_dir %>
+</p>
+
+<p>
+  <strong>Fun title:</strong>
+  <%= @funeral_info.fun_title %>
+</p>
+
+<p>
+  <strong>Fun dir email:</strong>
+  <%= @funeral_info.fun_dir_email %>
+</p>
+
+<p>
+  <strong>Current date and time:</strong>
+  <%= @funeral_info.current_date_and_time %>
+</p>
+
+<%= link_to 'Edit', edit_funeral_info_path(@funeral_info) %> |
+<%= link_to 'Back', funeral_infos_path %>

@@ -1,0 +1,2 @@
+module FuneralInfosHelper
+end

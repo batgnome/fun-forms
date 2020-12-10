@@ -1,0 +1,42 @@
+<%= form_with(model: funeral_info, local: true) do |form| %>
+  <% if funeral_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(funeral_info.errors.count, "error") %> prohibited this funeral_info from being saved:</h2>
+
+      <ul>
+        <% funeral_info.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fun_home %>
+    <%= form.text_field :fun_home %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fun_dir %>
+    <%= form.text_field :fun_dir %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fun_title %>
+    <%= form.text_field :fun_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fun_dir_email %>
+    <%= form.text_field :fun_dir_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :current_date_and_time %>
+    <%= form.datetime_select :current_date_and_time %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

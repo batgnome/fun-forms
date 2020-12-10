@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Funeral Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fun home</th>
+      <th>Fun dir</th>
+      <th>Fun title</th>
+      <th>Fun dir email</th>
+      <th>Current date and time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @funeral_infos.each do |funeral_info| %>
+      <tr>
+        <td><%= funeral_info.fun_home %></td>
+        <td><%= funeral_info.fun_dir %></td>
+        <td><%= funeral_info.fun_title %></td>
+        <td><%= funeral_info.fun_dir_email %></td>
+        <td><%= funeral_info.current_date_and_time %></td>
+        <td><%= link_to 'Show', funeral_info %></td>
+        <td><%= link_to 'Edit', edit_funeral_info_path(funeral_info) %></td>
+        <td><%= link_to 'Destroy', funeral_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Funeral Info', new_funeral_info_path %>

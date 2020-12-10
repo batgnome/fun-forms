@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_08_030217) do
+ActiveRecord::Schema.define(version: 2020_12_09_030448) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "funeral_infos", force: :cascade do |t|
+    t.string "fun_home"
+    t.string "fun_dir"
+    t.string "fun_title"
+    t.string "fun_dir_email"
+    t.datetime "current_date_and_time"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "master_forms", force: :cascade do |t|
     t.string "dec_name"
